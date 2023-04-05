@@ -127,6 +127,10 @@ header button {
   margin-bottom: 35px;
 }
 
+.second-div-card-container{
+  display: flex;
+}
+
 /* SECOND DIV CONTAINER */
 
 .palette {
