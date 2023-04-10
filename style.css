@@ -335,6 +335,56 @@ button {
 /* MEDIA QUERIES */
 /* FOR SCREENS 374px and BELOW */
 @media screen and (max-width: 374px) {
+  section{
+    width: 100%;
+  }
+
+  header{
+    width: 100%;
+    padding: 20px;
+  }
+
+  header ul{
+    display: none;
+  }
+
+  header button{
+    display: none;
+  }
+
+  .first-div{
+    width: 100%;
+    padding: 0;
+  }
+
+  .first-div-image{
+    width: 100%;
+    right: 0;
+    top: -16%;
+  }
+
+  .background{
+    width: 100%;
+    right: 20%;
+    top: -20%;
+  }
+
+  .first-div-image img{
+    width: 100%;
+  }
+
+  .background img{
+    width: 180%;
+  }
+
+  .first-div-writeup{
+    width: 100%;
+    padding-top: 200px;
+  }
+
+  .first-div-writeup h1{
+
+  }
 }
 
 /*  */
