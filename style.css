@@ -460,6 +460,12 @@ button {
 
   .logo-link-container {
     margin-bottom: 22px;
+    gap: 25px;
+  }
+
+  .icons{
+    justify-content: center;
+    gap: 30px;
   }
 
   .copywright {
@@ -613,6 +619,12 @@ button {
 
   .logo-link-container {
     margin-bottom: 22px;
+    gap: 25px;
+  }
+
+  .icons{
+    justify-content: center;
+    gap: 30px;
   }
 
   .copywright {
@@ -772,6 +784,12 @@ button {
 
   .logo-link-container {
     margin-bottom: 22px;
+    gap: 25px;
+  }
+
+  .icons{
+    justify-content: center;
+    gap: 30px;
   }
 
   .copywright {
@@ -930,6 +948,12 @@ button {
 
   .logo-link-container {
     margin-bottom: 22px;
+    gap: 25px;
+  }
+
+  .icons{
+    justify-content: center;
+    gap: 30px;
   }
 
   .copywright {
@@ -1090,6 +1114,12 @@ button {
 
   .logo-link-container {
     margin-bottom: 22px;
+    gap: 25px;
+  }
+
+  .icons{
+    justify-content: center;
+    gap: 30px;
   }
 
   .copywright {
@@ -1248,6 +1278,12 @@ button {
 
   .logo-link-container {
     margin-bottom: 22px;
+    gap: 25px;
+  }
+
+  .icons{
+    justify-content: center;
+    gap: 30px;
   }
 
   .copywright {
