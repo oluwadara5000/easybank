@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
@@ -19,7 +19,7 @@
 
   <title>Frontend Mentor | Easybank landing page</title>
 
-  
+
   <style>
     .attribution {
       font-size: 11px;
@@ -50,8 +50,21 @@
       <button>Request Invite</button>
     </div>
 
-    <i id="open" class="fa-solid fa-bars"></i>
+    <div class="panel-icons">
+      <i id="open" class="fa-solid fa-bars"></i>
+      <i id="close" class="fa-solid fa-xmark"></i>
+    </div>
   </header>
+  
+  <div id="panel" class="panel">
+    <ul id="panel-list" class="panel-list">
+      <li>Home</li>
+      <li>About</li>
+      <li>Contact</li>
+      <li>Blog</li>
+      <li>Careers</li>
+    </ul>
+  </div>
   <section>
     <div class="first-div">
       <div class="background">
@@ -182,6 +195,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+
+  <script src="script.js"></script>
 </body>
 
 </html>

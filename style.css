@@ -37,9 +37,43 @@ header {
   border-bottom: 1px solid hsl(136, 65%, 51%);
 }
 
-#open{
+#open, #close {
+  display: none;
+  position: absolute;
+  right: 1%;
+  margin-right: 15px;
+  top: 40%;
+}
+
+.panel{
+  width: 325px;
+  background-color: #ffffff;
+  height: 0;
+  position: absolute;
+  z-index: 300;
+  left: 50%;
+  margin-left: -162.5px;
+  margin-top: 25px;
+  text-align: center;
+  transition: 0.3s ease-in;
+}
+
+.panel-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 205px;
   display: none;
 }
+
+.panel-list li {
+  font-size: 15px;
+  list-style-type: none;
+  color: hsl(228, 39%, 23%);
+  font-weight: 600;
+  transition: 1s ease-in;
+}
+
 
 header ul {
   display: flex;
@@ -356,7 +390,11 @@ button {
     display: none;
   }
 
-  #open{
+  #open {
+    display: block;
+  }
+
+  #close {
     display: block;
   }
 
@@ -463,7 +501,7 @@ button {
     gap: 25px;
   }
 
-  .icons{
+  .icons {
     justify-content: center;
     gap: 30px;
   }
@@ -515,7 +553,11 @@ button {
     display: none;
   }
 
-  #open{
+  #open {
+    display: block;
+  }
+
+  #close {
     display: block;
   }
 
@@ -622,7 +664,7 @@ button {
     gap: 25px;
   }
 
-  .icons{
+  .icons {
     justify-content: center;
     gap: 30px;
   }
@@ -674,7 +716,11 @@ button {
     display: none;
   }
 
-  #open{
+  #open {
+    display: block;
+  }
+
+  #close {
     display: block;
   }
 
@@ -743,7 +789,7 @@ button {
     text-align: center;
   }
 
-  .second-div-card-container div{
+  .second-div-card-container div {
     width: 80%;
     margin: auto;
   }
@@ -787,7 +833,7 @@ button {
     gap: 25px;
   }
 
-  .icons{
+  .icons {
     justify-content: center;
     gap: 30px;
   }
@@ -838,7 +884,11 @@ button {
     display: none;
   }
 
-  #open{
+  #open {
+    display: block;
+  }
+
+  #close {
     display: block;
   }
 
@@ -907,7 +957,7 @@ button {
     text-align: center;
   }
 
-  .second-div-card-container div{
+  .second-div-card-container div {
     width: 80%;
     margin: auto;
   }
@@ -951,7 +1001,7 @@ button {
     gap: 25px;
   }
 
-  .icons{
+  .icons {
     justify-content: center;
     gap: 30px;
   }
@@ -966,7 +1016,6 @@ button {
     margin: auto;
   }
 }
-
 
 /*  */
 /*  */
@@ -1004,7 +1053,11 @@ button {
     display: none;
   }
 
-  #open{
+  #open {
+    display: block;
+  }
+
+  #close {
     display: block;
   }
 
@@ -1073,7 +1126,7 @@ button {
     text-align: center;
   }
 
-  .second-div-card-container div{
+  .second-div-card-container div {
     width: 70%;
     margin: auto;
   }
@@ -1117,7 +1170,7 @@ button {
     gap: 25px;
   }
 
-  .icons{
+  .icons {
     justify-content: center;
     gap: 30px;
   }
@@ -1168,7 +1221,11 @@ button {
     display: none;
   }
 
-  #open{
+  #open {
+    display: block;
+  }
+
+  #close {
     display: block;
   }
 
@@ -1203,10 +1260,11 @@ button {
   }
 
   .first-div-writeup {
-    width: 100%;
+    width: 80%;
     padding: 0 30px;
     padding-top: 550px;
     text-align: center;
+    margin: auto;
   }
 
   .first-div-writeup h1 {
@@ -1237,7 +1295,7 @@ button {
     text-align: center;
   }
 
-  .second-div-card-container div{
+  .second-div-card-container div {
     width: 60%;
     margin: auto;
   }
@@ -1281,7 +1339,7 @@ button {
     gap: 25px;
   }
 
-  .icons{
+  .icons {
     justify-content: center;
     gap: 30px;
   }
@@ -1317,8 +1375,914 @@ button {
 /*  */
 /*  */
 /*  */
-/* FOR SCREENS FROM 768px TO 1439px */
+/* FOR SCREENS FROM 768px TO 840px */
 
-@media screen and (min-width: 768px) and (max-width: 1439px) {
+@media screen and (min-width: 768px) and (max-width: 840px) {
+  section {
+    width: 767px;
+  }
+
+  header {
+    width: 767px;
+    padding: 20px;
+  }
+
+  .first-div {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 90px;
+  }
+
+  .first-div-image {
+    width: 100%;
+    right: 0;
+    top: -16%;
+  }
+
+  .background {
+    width: 100%;
+    right: 25%;
+    top: -42%;
+  }
+
+  .first-div-image img {
+    width: 100%;
+  }
+
+  .background img {
+    width: 200%;
+  }
+
+  .first-div-writeup {
+    width: 70%;
+    padding: 0 30px;
+    padding-top: 650px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .first-div-writeup h1 {
+    font-size: 40px;
+  }
+
+  .first-div-writeup p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .second-div {
+    padding: 65px 30px;
+  }
+
+  .second-div-writeup {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+  }
+
+  .second-div-writeup p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .second-div-card-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .second-div-card-container div {
+    width: 50%;
+    margin: auto;
+  }
+
+  .second-div-card-container p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .third-div {
+    padding: 90px 30px;
+  }
+
+  .third-div-card-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .third-div-card-container div {
+    width: 90%;
+    margin: auto;
+  }
+
+  .third-div-card-container h1 {
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 40px 45px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .links-container {
+    gap: 22px;
+    margin-bottom: 22px;
+  }
+
+  .logo-link-container {
+    margin-bottom: 22px;
+    gap: 25px;
+  }
+
+  .icons {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .copywright {
+    gap: 22px;
+  }
+
+  .copywright button {
+    width: 160px;
+    padding: 14px 0;
+    margin: auto;
+  }
 }
 
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* FOR SCREENS FROM 841px TO 915px */
+
+@media screen and (min-width: 841px) and (max-width: 915px) {
+  section {
+    width: 840px;
+  }
+
+  header {
+    width: 840px;
+    padding: 20px;
+  }
+
+  .first-div {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 90px;
+  }
+
+  .first-div-image {
+    width: 100%;
+    right: 0;
+    top: -25%;
+  }
+
+  .background {
+    width: 100%;
+    right: 25%;
+    top: -50%;
+  }
+
+  .first-div-image img {
+    width: 100%;
+  }
+
+  .background img {
+    width: 200%;
+  }
+
+  .first-div-writeup {
+    width: 60%;
+    padding: 0 30px;
+    padding-top: 600px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .first-div-writeup h1 {
+    font-size: 40px;
+  }
+
+  .first-div-writeup p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .second-div {
+    padding: 65px 30px;
+  }
+
+  .second-div-writeup {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+  }
+
+  .second-div-writeup p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .second-div-card-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .second-div-card-container div {
+    width: 50%;
+    margin: auto;
+  }
+
+  .second-div-card-container p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .third-div {
+    padding: 90px 30px;
+  }
+
+  .third-div-card-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .third-div-card-container div {
+    width: 90%;
+    margin: auto;
+  }
+
+  .third-div-card-container h1 {
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 40px 45px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .links-container {
+    gap: 22px;
+    margin-bottom: 22px;
+  }
+
+  .logo-link-container {
+    margin-bottom: 22px;
+    gap: 25px;
+  }
+
+  .icons {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .copywright {
+    gap: 22px;
+  }
+
+  .copywright button {
+    width: 160px;
+    padding: 14px 0;
+    margin: auto;
+  }
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* FOR SCREENS FROM 916px TO 990px */
+
+@media screen and (min-width: 916px) and (max-width: 990px) {
+  section {
+    width: 915px;
+  }
+
+  header {
+    width: 915px;
+    padding: 20px;
+  }
+
+  .first-div {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 90px;
+  }
+
+  .first-div-image {
+    width: 100%;
+    right: 0;
+    top: -30%;
+  }
+
+  .background {
+    width: 100%;
+    right: 25%;
+    top: -60%;
+  }
+
+  .first-div-image img {
+    width: 100%;
+  }
+
+  .background img {
+    width: 200%;
+  }
+
+  .first-div-writeup {
+    width: 60%;
+    padding: 0 30px;
+    padding-top: 650px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .first-div-writeup h1 {
+    font-size: 40px;
+  }
+
+  .first-div-writeup p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .second-div {
+    padding: 65px 30px;
+  }
+
+  .second-div-writeup {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+  }
+
+  .second-div-writeup p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .second-div-card-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .second-div-card-container div {
+    width: 40%;
+    margin: auto;
+  }
+
+  .second-div-card-container p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .third-div {
+    padding: 90px 30px;
+  }
+
+  .third-div-card-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .third-div-card-container div {
+    width: 80%;
+    margin: auto;
+  }
+
+  .third-div-card-container h1 {
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 40px 45px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .links-container {
+    gap: 22px;
+    margin-bottom: 22px;
+  }
+
+  .logo-link-container {
+    margin-bottom: 22px;
+    gap: 25px;
+  }
+
+  .icons {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .copywright {
+    gap: 22px;
+  }
+
+  .copywright button {
+    width: 160px;
+    padding: 14px 0;
+    margin: auto;
+  }
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* FOR SCREENS FROM 991px TO 1065px */
+
+@media screen and (min-width: 991px) and (max-width: 1065px) {
+  section {
+    width: 990px;
+  }
+
+  header {
+    width: 990px;
+    padding: 20px;
+  }
+
+  .first-div {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 90px;
+  }
+
+  .first-div-image {
+    width: 100%;
+    right: 0;
+    top: -30%;
+  }
+
+  .background {
+    width: 100%;
+    right: 25%;
+    top: -60%;
+  }
+
+  .first-div-image img {
+    width: 100%;
+  }
+
+  .background img {
+    width: 200%;
+  }
+
+  .first-div-writeup {
+    width: 60%;
+    padding: 0 30px;
+    padding-top: 700px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .first-div-writeup h1 {
+    font-size: 40px;
+  }
+
+  .first-div-writeup p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .second-div {
+    padding: 65px 30px;
+  }
+
+  .second-div-writeup {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+  }
+
+  .second-div-writeup p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .second-div-card-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .second-div-card-container div {
+    width: 40%;
+    margin: auto;
+  }
+
+  .second-div-card-container p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .third-div {
+    padding: 90px 30px;
+  }
+
+  .third-div-card-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .third-div-card-container div {
+    width: 70%;
+    margin: auto;
+  }
+
+  .third-div-card-container h1 {
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 40px 45px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .links-container {
+    gap: 22px;
+    margin-bottom: 22px;
+  }
+
+  .logo-link-container {
+    margin-bottom: 22px;
+    gap: 25px;
+  }
+
+  .icons {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .copywright {
+    gap: 22px;
+  }
+
+  .copywright button {
+    width: 160px;
+    padding: 14px 0;
+    margin: auto;
+  }
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* FOR SCREENS FROM 1066px TO 1140px */
+
+@media screen and (min-width: 1066px) and (max-width: 1140px) {
+  section {
+    width: 1065px;
+  }
+
+  header {
+    width: 1065px;
+    padding: 20px;
+  }
+
+  .first-div {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 90px;
+  }
+
+  .first-div-image {
+    width: 100%;
+    right: 0;
+    top: -30%;
+  }
+
+  .background {
+    width: 100%;
+    right: 25%;
+    top: -60%;
+  }
+
+  .first-div-image img {
+    width: 100%;
+  }
+
+  .background img {
+    width: 200%;
+  }
+
+  .first-div-writeup {
+    width: 60%;
+    padding: 0 30px;
+    padding-top: 750px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .first-div-writeup h1 {
+    font-size: 40px;
+  }
+
+  .first-div-writeup p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .second-div {
+    padding: 65px 30px;
+  }
+
+  .second-div-writeup {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+  }
+
+  .second-div-writeup p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .second-div-card-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+  }
+
+  .second-div-card-container div {
+    width: 70%;
+    margin: auto;
+  }
+
+  .second-div-card-container p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .third-div {
+    padding: 90px 30px;
+  }
+
+  .third-div-card-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .third-div-card-container div {
+    width: 70%;
+    margin: auto;
+  }
+
+  .third-div-card-container h1 {
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 40px 45px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .links-container {
+    gap: 22px;
+    margin-bottom: 22px;
+  }
+
+  .logo-link-container {
+    margin-bottom: 22px;
+    gap: 25px;
+  }
+
+  .icons {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .copywright {
+    gap: 22px;
+  }
+
+  .copywright button {
+    width: 160px;
+    padding: 14px 0;
+    margin: auto;
+  }
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/* FOR SCREENS FROM 1141px TO 1439px */
+
+@media screen and (min-width: 1141px) and (max-width: 1439px) {
+  section {
+    width: 1140px;
+  }
+
+  header {
+    width: 1140px;
+    padding: 20px;
+  }
+
+  .first-div {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 90px;
+  }
+
+  .first-div-image {
+    width: 100%;
+    right: 0;
+    top: -30%;
+  }
+
+  .background {
+    width: 100%;
+    right: 25%;
+    top: -65%;
+  }
+
+  .first-div-image img {
+    width: 100%;
+  }
+
+  .background img {
+    width: 200%;
+  }
+
+  .first-div-writeup {
+    width: 60%;
+    padding: 0 30px;
+    padding-top: 850px;
+    text-align: center;
+    margin: auto;
+  }
+
+  .first-div-writeup h1 {
+    font-size: 40px;
+  }
+
+  .first-div-writeup p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .second-div {
+    padding: 65px 30px;
+  }
+
+  .second-div-writeup {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+  }
+
+  .second-div-writeup p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .second-div-card-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+  }
+
+  .second-div-card-container div {
+    width: 70%;
+    margin: auto;
+  }
+
+  .second-div-card-container p {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .third-div {
+    padding: 90px 30px;
+  }
+
+  .third-div-card-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .third-div-card-container div {
+    width: 60%;
+    margin: auto;
+  }
+
+  .third-div-card-container h1 {
+    font-size: 16px;
+  }
+
+  footer {
+    padding: 40px 45px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .links-container {
+    gap: 22px;
+    margin-bottom: 22px;
+  }
+
+  .logo-link-container {
+    margin-bottom: 22px;
+    gap: 25px;
+  }
+
+  .icons {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .copywright {
+    gap: 22px;
+  }
+
+  .copywright button {
+    width: 160px;
+    padding: 14px 0;
+    margin: auto;
+  }
+}
