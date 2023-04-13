@@ -25,3 +25,12 @@ close.addEventListener("click", function () {
   panelList.style.display = "none";
   blur.style.opacity = "0";
 });
+
+// close.addEventListener("click", function () {
+//   open.style.display = "block";
+//   close.style.display = "none";
+//   panel.style.height = "0";
+//   panel.style.padding = "0";
+//   panelList.style.display = "none";
+//   blur.style.opacity = "0";
+// });
