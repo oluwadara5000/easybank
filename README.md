@@ -40,5 +40,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [GitHub Repo](https://github.com/oluwadara5000)
+- Website - [GitHub](https://github.com/oluwadara5000)
 - Frontend Mentor - [@oluwadara5000](https://www.frontendmentor.io/profile/oluwadara5000)
