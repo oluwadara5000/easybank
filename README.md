@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./images/easybank%20screenshot.png)
+![](/images/easybank-screenshot.png)
 
 ### Links
 
@@ -40,5 +40,5 @@ Users should be able to:
 
 ## Author
 
-- Website - [Odejobi Oluwadara](https://github.com/oluwadara5000)
+- Website - [GitHub Repo](https://github.com/oluwadara5000)
 - Frontend Mentor - [@oluwadara5000](https://www.frontendmentor.io/profile/oluwadara5000)
